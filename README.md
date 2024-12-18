@@ -34,6 +34,8 @@ Rustでプログラミングした、Discord Botです。
     cd [上のコマンドで生成されたフォルダ]/.shuttle
     # idだけ取得
     cat config.toml | grep -Po '(?<=id = ).*' | sed 's/"//g'
+    # 元の位置に戻って、生成した
+    cd ../.. && rm -rf [上のコマンドで生成されたフォルダ]
     # シェルから出る
     exit
     ```
