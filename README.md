@@ -47,3 +47,8 @@ GitHub Actionsで自動デプロイできるようにしてあります。
 - ROLE_ID
 
 これらをSecretとして設定してください
+
+### コマンドプロンプトってどれ？
+これ。
+![image](https://github.com/user-attachments/assets/a908c674-7dc6-40ec-82ed-8a134ba913f5)
+
