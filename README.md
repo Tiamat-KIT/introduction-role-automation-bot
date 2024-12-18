@@ -25,6 +25,7 @@ Rustでプログラミングした、Discord Botです。
     実行するコマンドはコレ
     ```bash
     docker compose exec rust-shuttle shuttle init
+    # この下のコマンドはidだけ出てくるので結果をコピーしてね
     docker compose exec rust-shuttle grep -oP 'id="\K[^"]*' /workspace/[9のコマンドで生成されたフォルダ]/.shuttle/config.toml
     ```
     をコマンドプロンプトで実行
