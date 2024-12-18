@@ -14,7 +14,7 @@ Rustでプログラミングした、Discord Botです。
 
     これ -> ![image](https://github.com/user-attachments/assets/791192a4-abd7-4222-b4cc-348c5687b588)
 
-6. ForkしたリポジトリをCloneする
+6. ~~ForkしたリポジトリをCloneする~~ Codeボタンから「Download ZIP」を選択してZIPファイルをダウンロードして解凍する
 7. genというフォルダを作っておく（**Forkしたリポジトリの中で作成してください！**）
 8. リポジトリにあるDockerfileから、Dockerを通して仮想環境を起動する。
     `docker compose up -d`
