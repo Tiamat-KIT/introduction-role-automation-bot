@@ -50,5 +50,6 @@ GitHub Actionsで自動デプロイできるようにしてあります。
 
 ### コマンドプロンプトってどれ？
 これ。
-![image](https://github.com/user-attachments/assets/a908c674-7dc6-40ec-82ed-8a134ba913f5)
+![image](https://github.com/user-attachments/assets/56b52522-36d1-4ef5-9e6f-3a8636bf9bd0)
+
 
