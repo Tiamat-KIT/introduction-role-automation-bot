@@ -8,8 +8,8 @@ Rustでプログラミングした、Discord Botです。
 ちょっと手順長めになりますが許してください。
 1. GitHubアカウントを作成
 2. PCにDocker Desktopを導入。
-3. Shuttleというプログラムのサーバを無料で立てられるサービスに登録
-4. Shuttleのサイトから、API_KEYというものを取得する（これは、SHUTTLE_API_KEY。）
+3. [Shuttle](https://console.shuttle.dev/)というプログラムのサーバを無料で立てられるサービスに登録
+4. [Shuttle](https://console.shuttle.dev/)のサイトから、API_KEYというものを取得する（これは、SHUTTLE_API_KEY。）
 5. このリポジトリをFork
 6. ForkしたリポジトリをCloneする
 7. genというフォルダを作っておく（**Forkしたリポジトリの中で作成してください！**）
