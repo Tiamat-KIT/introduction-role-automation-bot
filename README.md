@@ -26,12 +26,22 @@ Rustでプログラミングした、Discord Botです。
     ```bash
     # これで起動できるはず
     docker compose up -d
+    # コンテナ内のシェル（コンテナ内のOSはLinuxなので、コマンドプロンプトみたいな別もの）に入る
+    docker compose exec rust-shuttle bash
     # これでshuttleのproject_idが生成されるはず
-    docker compose exec rust-shuttle shuttle init
-    # この下のコマンドはidだけ出てくるので結果をコピーしてね
-    docker compose exec rust-shuttle grep -oP 'id="\K[^"]*' /workspace/[上のコマンドで生成されたフォルダ]/.shuttle/config.toml
+    shuttle init
+    # ディレクトリ移動する
+    cd [上のコマンドで生成されたフォルダ]/.shuttle
+    # idだけ取得
+    cat config.toml | grep -Po '(?<=id = ).*' | sed 's/"//g'
+    # シェルから出る
+    exit
     ```
     をコマンドプロンプトで実行
+    
+    ![image](https://github.com/user-attachments/assets/b089c91b-257a-4c3f-9132-942b2f4d01e6)
+
+
 11. 生成されたファイルを全消し（idはPROJECT_IDになるので、絶対に保存しておいてほしい）
 12. Discord Developer Potalで「New Application」をクリックして、新規作成
 13. Botメニューから、「RESET TOKEN」でトークン発行（発行したトークンがDISCORD_TOKEN）
