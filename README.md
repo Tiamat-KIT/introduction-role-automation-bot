@@ -34,7 +34,7 @@ Rustでプログラミングした、Discord Botです。
     cd [上のコマンドで生成されたフォルダ]/.shuttle
     # idだけ取得
     cat config.toml | grep -Po '(?<=id = ).*' | sed 's/"//g'
-    # 元の位置に戻って、生成した
+    # 元の位置に戻って、生成されたファイルを全消し（idはPROJECT_IDになるので、絶対に保存しておいてほしい）
     cd ../.. && rm -rf [上のコマンドで生成されたフォルダ]
     # シェルから出る
     exit
@@ -43,8 +43,6 @@ Rustでプログラミングした、Discord Botです。
     
     ![image](https://github.com/user-attachments/assets/b089c91b-257a-4c3f-9132-942b2f4d01e6)
 
-
-11. 生成されたファイルを全消し（idはPROJECT_IDになるので、絶対に保存しておいてほしい）
 12. Discord Developer Potalで「New Application」をクリックして、新規作成
 13. Botメニューから、「RESET TOKEN」でトークン発行（発行したトークンがDISCORD_TOKEN）
 14. Botメニューで、以下のようにINTENTを有効化
