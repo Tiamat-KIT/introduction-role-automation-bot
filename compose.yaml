@@ -2,3 +2,5 @@ version: '3'
 services:
   rust-shuttle:
     build: .
+    volumes:
+      - .:/workspace
