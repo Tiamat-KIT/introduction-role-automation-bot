@@ -21,6 +21,7 @@ Rustでプログラミングした、Discord Botです。
 12. Discordのグループの設定から、ロールのID（ROLE_ID）、自己紹介のチャンネルのID（INTRODUCTION_CHANNEL_ID）を用意する
 13. Forkしたリポジトリの「Setting」から「Security」->「Actions」
 14. 「New Repository Secret」で以下の設定をしてほしいところに書いてある5つのデータ（名前と対応する値）を登録
+15. Forkしたリポジトリの「Actions」の「Shuttle Deploy」の
 
 
 
