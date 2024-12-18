@@ -7,7 +7,10 @@ Rustでプログラミングした、Discord Botです。
 ## 設定をしてほしいところ
 GitHub Actionsで自動デプロイできるようにしてあります。
 
+- SHUTTLE_API_KEY
 - DISCORD_TOKEN
 - INTRODUCTION_CHANNEL_ID
 - PROJECT_ID
 - ROLE_ID
+
+これらをSecretとして設定してください
