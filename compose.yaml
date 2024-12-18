@@ -4,3 +4,4 @@ services:
     volumes:
       - ./gen:/workspace
     tty: true
+    stdin_open: true
