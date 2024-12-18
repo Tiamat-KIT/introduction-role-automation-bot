@@ -20,7 +20,7 @@ Rustでプログラミングした、Discord Botです。
     ![image](https://github.com/user-attachments/assets/5c789a9b-8f1e-4fda-ae22-b9d89c5386e1)
 12. Discordのグループの設定から、ロールのID（ROLE_ID）、自己紹介のチャンネルのID（INTRODUCTION_CHANNEL_ID）を用意する
 13. Forkしたリポジトリの「Setting」から「Security」->「Actions」
-14. 「New Repository Add」
+14. 「New Repository Secret」で以下の設定をしてほしいところに書いてある5つのデータ（名前と対応する値）を登録
 
 
 
