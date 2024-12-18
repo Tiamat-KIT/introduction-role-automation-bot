@@ -22,7 +22,9 @@ Rustでプログラミングした、Discord Botです。
 9. リポジトリにあるDockerfileから、Dockerを通して仮想環境を起動する。
     `docker compose up -d`をコマンドプロンプトで実行
 10. 導入してあるShuttle CLIで`shuttle init`をして、それで生成されたファイルのうち、**`.shuttle/config.toml`からidだけ保存**する
+    実行するコマンドはコレ
     ```bash
+    docker compose exec rust-shuttle shuttle init
     docker compose exec rust-shuttle grep -oP 'id="\K[^"]*' /workspace/[9のコマンドで生成されたフォルダ]/.shuttle/config.toml
     ```
     をコマンドプロンプトで実行
