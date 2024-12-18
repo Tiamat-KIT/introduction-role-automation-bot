@@ -13,7 +13,7 @@ Rustでプログラミングした、Discord Botです。
 5. このリポジトリをFork
 6. リポジトリにあるDockerfileから、Dockerを通して仮想環境を起動する
 7. 導入してあるShuttle CLIで`shuttle init`をして、それで生成されたファイルのうち、`.shuttle/config.toml`からidだけ保存する
-8. 生成されたファイルを全消し（idはPROJECT_IDになるので、絶対に保存しておいてほしい
+8. 生成されたファイルを全消し（idはPROJECT_IDになるので、絶対に保存しておいてほしい）
 9. Discord Developer Potalで「New Application」をクリックして、新規作成
 10. Botメニューから、「RESET TOKEN」でトークン発行（発行したトークンがDISCORD_TOKEN）
 11. Botメニューで、以下のようにINTENTを有効化
