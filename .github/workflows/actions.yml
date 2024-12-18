@@ -1,0 +1,23 @@
+name: Shuttle Deploy
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: shuttle-hq/deploy-action@v2
+        with:
+          shuttle-api-key: ${{ secrets.SHUTTLE_API_KEY }}
+          project-id: ${{ secrets.PROJECT_ID }}
+          working-directory: "backend"
+          cargo-shuttle-version: "0.48.1"
+          extra-args: --allow-dirty --debug
+          secrets: |
+            DISCORD_TOKEN = '${{ secrets.DISCORD_TOKEN }}'
+            INTRODUCTION_CHANNEL_ID = '${{ secrets.INTRODUCTION_CHANNEL_ID }}'
+            ROLE_ID = '${{ secrets.ROLE_ID }}'
