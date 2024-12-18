@@ -11,6 +11,9 @@ Rustでプログラミングした、Discord Botです。
 3. [Shuttle](https://console.shuttle.dev/)というプログラムのサーバを無料で立てられるサービスに登録
 4. [Shuttle](https://console.shuttle.dev/)のサイトから、API_KEYというものを取得する（これは、SHUTTLE_API_KEY。）
 5. このリポジトリをFork
+
+    これ -> ![image](https://github.com/user-attachments/assets/791192a4-abd7-4222-b4cc-348c5687b588)
+
 6. ForkしたリポジトリをCloneする
 7. genというフォルダを作っておく（**Forkしたリポジトリの中で作成してください！**）
 8. リポジトリにあるDockerfileから、Dockerを通して仮想環境を起動する。
