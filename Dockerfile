@@ -12,3 +12,4 @@ RUN apt-get update && apt-get install -y \
 
 # cargo-shuttleのインストール
 RUN cargo install cargo-shuttle
+WORKDIR /app
