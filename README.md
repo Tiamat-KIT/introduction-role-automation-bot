@@ -14,7 +14,7 @@ Rustでプログラミングした、Discord Botです。
 
     これ -> ![image](https://github.com/user-attachments/assets/791192a4-abd7-4222-b4cc-348c5687b588)
 
-6. ~~ForkしたリポジトリをCloneする~~ Codeボタンから「Download ZIP」を選択してZIPファイルをダウンロードして解凍する
+6. ~~ForkしたリポジトリをCloneする~~ Forkしたリポジトリの内容をCodeボタンから「Download ZIP」を選択してZIPファイルをダウンロードして解凍する
 
     Codeボタンはこれと似たようなやつがどこかにあるぞ！ -> ![image](https://github.com/user-attachments/assets/6fc68289-5e0d-4654-91b2-c009845bfad5)
 
