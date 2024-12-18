@@ -52,4 +52,6 @@ GitHub Actionsで自動デプロイできるようにしてあります。
 これ。
 ![image](https://github.com/user-attachments/assets/56b52522-36d1-4ef5-9e6f-3a8636bf9bd0)
 
-
+もしくは
+![image](https://github.com/user-attachments/assets/bc287e8a-97d3-4af8-b07b-573e1edcbabc)
+cmdって書いて実行
