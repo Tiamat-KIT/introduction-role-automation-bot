@@ -25,7 +25,7 @@ Rustでプログラミングした、Discord Botです。
     実行するコマンドはコレ
     ```bash
     # これで起動できるはず
-    docker compose up
+    docker compose up -d
     # これでshuttleのproject_idが生成されるはず
     docker compose exec rust-shuttle shuttle init
     # この下のコマンドはidだけ出てくるので結果をコピーしてね
