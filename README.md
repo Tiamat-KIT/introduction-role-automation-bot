@@ -61,3 +61,19 @@ GitHub Actionsで自動デプロイできるようにしてあります。
 もしくは
 ![image](https://github.com/user-attachments/assets/bc287e8a-97d3-4af8-b07b-573e1edcbabc)
 cmdって書いて実行
+
+## Docker周りでつまづいたら
+
+```bash
+# コンテナを削除
+docker-compose rm rust-shuttle
+
+# ちゃんと指定したコンテナがなくなっているか確認
+docker-compose ps -a　
+
+# 個別のコンテナを作り直し
+docker-compose build --no-cache rust-shuttle
+
+# 動作確認
+docker-compose up -d
+```
