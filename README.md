@@ -19,8 +19,7 @@ Rustでプログラミングした、Discord Botです。
 11. 以下のようにINTENTを有効化
     ![image](https://github.com/user-attachments/assets/5c789a9b-8f1e-4fda-ae22-b9d89c5386e1)
 12. Discordのグループの設定から、ロールのID（ROLE_ID）、自己紹介のチャンネルのID（INTRODUCTION_CHANNEL_ID）を用意する
-13. Forkしたリポジトリの「Setting」から以下の項目を選択する
-![image](https://github.com/user-attachments/assets/4e3ef947-9bb7-4438-ba09-515b31867b4f)
+13. Forkしたリポジトリの「Setting」から「Security」->「Actions」
 
 
 
