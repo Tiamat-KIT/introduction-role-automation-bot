@@ -1,0 +1,65 @@
+name: Shuttle Deploy
+description: Deploy to Shuttle
+
+
+inputs:
+  shuttle-api-key:
+    description: The key found at https://console.shuttle.dev/account/overview
+    required: true
+  cargo-shuttle-version:
+    description: Version of cargo-shuttle
+    required: false
+    default: ""
+  working-directory:
+    description: The cargo workspace root
+    required: false
+    default: .
+  project-id:
+    description: Project ID
+    required: true
+  secrets:
+    description: |
+      Content of the `Secrets.toml` file, if any.
+      Use multiline text with `|` in case of multiple secrets
+    required: false
+    default: ""
+  extra-args:
+    description: Extra args to the deploy command
+    required: false
+    default: ""
+
+runs:
+  using: "composite"
+  steps:
+      # check out repo if not done already
+    - id: check-repo-is-not-initialized
+      run: echo "remote-url=$( git config --get remote.origin.url )" >> $GITHUB_OUTPUT
+      shell: bash
+    - uses: actions/checkout@v4
+      if: ${{ !contains(steps.check-repo-is-not-initialized.outputs.remote-url, github.repository) }}
+
+      # install with cargo-binstall
+    - name: Install cargo-binstall
+      run: curl -L --proto '=https' --tlsv1.2 -sSf https://raw.githubusercontent.com/cargo-bins/cargo-binstall/main/install-from-binstall-release.sh | bash
+      shell: bash
+    - name: Install cargo-shuttle
+      if: ${{ inputs.cargo-shuttle-version == '' }}
+      run: cargo binstall -y --locked cargo-shuttle
+      shell: bash
+    - name: Install cargo-shuttle ${{ inputs.cargo-shuttle-version }}
+      if: ${{ inputs.cargo-shuttle-version != '' }}
+      run: cargo binstall -y --locked cargo-shuttle@${{ inputs.cargo-shuttle-version }}
+      shell: bash
+
+    - name: Create secret file
+      if: ${{ inputs.secrets != '' }}
+      run: echo "${{ inputs.secrets }}" > Secrets.toml
+      working-directory: ${{ inputs.working-directory }}
+      shell: bash
+
+    - name: Deploy to Shuttle
+      run: shuttle deploy --id ${{ inputs.project-id }} ${{ inputs.extra-args }}
+      working-directory: ${{ inputs.working-directory }}
+      env:
+        SHUTTLE_API_KEY: ${{ inputs.shuttle-api-key }}
+      shell: bash
