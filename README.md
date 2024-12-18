@@ -12,7 +12,8 @@ Rustでプログラミングした、Discord Botです。
 4. Shuttleのサイトから、API_KEYというものを取得する（これは、SHUTTLE_API_KEY。）
 5. このリポジトリをFork
 6. ForkしたリポジトリをCloneする
-7. リポジトリにあるDockerfileから、Dockerを通して仮想環境を起動する。
+7. genというフォルダを作っておく
+8. リポジトリにあるDockerfileから、Dockerを通して仮想環境を起動する。
     `docker compose up -d`
 9. 導入してあるShuttle CLIで`shuttle init`をして、それで生成されたファイルのうち、`.shuttle/config.toml`からidだけ保存する
     ```bash
