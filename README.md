@@ -24,6 +24,9 @@ Rustでプログラミングした、Discord Botです。
 10. 導入してあるShuttle CLIで`shuttle init`をして、それで生成されたファイルのうち、**`.shuttle/config.toml`からidだけ保存**する
     実行するコマンドはコレ
     ```bash
+    # これで起動できるはず
+    docker compose up
+    # これでshuttleのproject_idが生成されるはず
     docker compose exec rust-shuttle shuttle init
     # この下のコマンドはidだけ出てくるので結果をコピーしてね
     docker compose exec rust-shuttle grep -oP 'id="\K[^"]*' /workspace/[上のコマンドで生成されたフォルダ]/.shuttle/config.toml
