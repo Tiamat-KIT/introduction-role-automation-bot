@@ -3,3 +3,4 @@ services:
     build: .
     volumes:
       - ./gen:/workspace
+    tty: true
