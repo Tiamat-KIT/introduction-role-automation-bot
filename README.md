@@ -51,6 +51,13 @@ Rustでプログラミングした、Discord Botです。
 16. Forkしたリポジトリの「Setting」から「Security」->「Actions」
 17. 「New Repository Secret」で以下の設定をしてほしいところに書いてある5つのデータ（名前と対応する値）を登録
 18. Forkしたリポジトリの「Actions」の「Shuttle Deploy」の「Run Workflow」を押す
+19. Discord Developer Potalで、OAuth2 URL Generatorで以下の設定をする
+    ![image](https://github.com/user-attachments/assets/d355d51c-5dfa-4c6e-8298-81febd2cdd68)
+    ![image](https://github.com/user-attachments/assets/bde88ae3-ff38-4bff-8631-be1d6129bab0)
+20. 生成されたURLを使ってBotを招待する
+21. Discordのグループサーバの設定からBotのロールが、自動的に設定したいロールの下にくるようにする
+    ![image](https://github.com/user-attachments/assets/ee5b7ab6-0237-4f59-b870-1984b807a90a)
+
 
 これで出来ます。
 ## 設定をしてほしいところ
